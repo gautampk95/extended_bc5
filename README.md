@@ -5,7 +5,7 @@ In the thesis work, the extended BC.5 method comprised 5 functions in its formul
 
 $$ f(x_i; u_i, v_i, ...) = c(u_i, v_i, ...) + \frac{d(u_i, v_i, ...) - c(u_i, v_i, ...) + f(u_i, v_i, ...)x_i}{1+ \text{exp}(b(u_i, v_i, ...)(\log(x_i) - \log(e(u_i, v_i, ...))))} $$
 
-After finding the variable "Pressure", denoted as $p$, for all the functions in the proposed method, the extended BC.5 is formulated as:
+After finding the variable "Pressure", denoted as $p$, to include in all the functions of the proposed method, the extended BC.5 is formulated as:
 
 $$  f(x_i, p_i) = c(p_i) + \frac{d(p_i) - c(p_i) + f(p_i)x_i}{1 + \text{exp}(b(p_i)(\log(x_i) - \log(e(p_i))))} $$
 
