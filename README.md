@@ -81,6 +81,6 @@ From Tables 3 and 4, the following observations can be drawn regarding the model
 **Table 6**: Results obtained from R implementation.
 
 
-**Note **: The R implementation utilized powerful server nodes to obtain results, while the Python implementation was executed on a local machine equipped with an Intel Core i7 9th generation processor. Surprisingly, the Python implementation is faster, and its time complexity is comparable to that of the server nodes supporting R.
+**Note**: The R implementation utilized powerful server nodes to obtain results, while the Python implementation was executed on a local machine equipped with an Intel Core i7 9th generation processor. Surprisingly, the Python implementation is faster, and its time complexity is comparable to that of the server nodes supporting R.
 
 
