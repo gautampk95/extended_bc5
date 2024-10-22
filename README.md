@@ -27,7 +27,7 @@
 | Helium  | 44.3025  | 29.7143    |
 | Air (Luft) | 20.1633  | 12.9566      |
 
-**Table 1**: Results obtained from Python implementation.
+**Table 3**: Results obtained from Python implementation.
 
 | Gas      | RMSE | MAE  |
 |:----------:|:----:|:-----------:|
@@ -35,7 +35,7 @@
 | Helium  | 43.8554  | 29.2820    |
 | Air (Luft) | 23.0343  | 15.1110      |
 
-**Table 2**: Results obtained from R implementation.
+**Table 4**: Results obtained from R implementation.
 
 ## Non-linear functions in the model function. Optimization: BFGS
 
@@ -45,7 +45,7 @@
 | Helium  | 52.1970  | 30.3804    |
 | Air (Luft) | 14.2676  | 7.6326      |
 
-**Table 1**: Results obtained from Python implementation.
+**Table 5**: Results obtained from Python implementation.
 
 | Gas      | RMSE | MAE  |
 |:----------:|:----:|:-----------:|
@@ -53,6 +53,6 @@
 | Helium  | 52.2065  | 30.3850    |
 | Air (Luft) | 13.8897  | 7.2445      |
 
-**Table 2**: Results obtained from R implementation.
+**Table 6**: Results obtained from R implementation.
 
 
