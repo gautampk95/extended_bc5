@@ -13,7 +13,7 @@ After finding the variable "Pressure", denoted as $p$, to include in all the fun
 
 $$  f(x_i, p_i) = c(p_i) + \frac{d(p_i) - c(p_i) + f(p_i)x_i}{1 + \text{exp}(b(p_i)(\log(x_i) - \log(e(p_i))))} $$
 
-Here, $x$ is the time variable. 
+Here, $x$ is the time variable.The initial intercept values are crucial for identifying local minima. These values are calculated based on the estimates for the parameters $b, c, d, e$ and $f$, as demonstrated in the Jupyter notebook.
 
 ## Optimization: BFGS
 
