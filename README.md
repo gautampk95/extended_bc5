@@ -2,7 +2,7 @@
 
 In my master's thesis, I developed an extension of the well-known Dose-Response (DR) curve method, introducing a model capable of incorporating multiple explanatory variables. This new approach, termed the "Extended BC.5 method," was shown to be applicable not only in Toxicology but also across various other fields. The original work was implemented in R due to the comprehensive DR modeling capabilities of its libraries. Recently, I translated this work into Python by developing a [library](https://github.com/gautampk95/drm_basic) that supports common DR models, successfully replicating the thesis results in a more widely adopted programming environment.
 
-This project primarily focuses on the key results obtained from my thesis work in R, comparing them with the implementations in Python as demonstrated throughout this project.
+This project primarily focuses on the key results obtained from my thesis work in R, comparing them with the implementations in Python as demonstrated throughout this project. The 
 
 ## Proposed Extended BC.5 method
 In the thesis work, the extended BC.5 method comprised 5 functions in its formulation, as shown below:
@@ -64,6 +64,8 @@ From Tables 3 and 4, the following observations can be drawn regarding the model
 
 ## Non-linear functions in the model function. Optimization: BFGS
 
+The proposed formula incorporates non-linear functions, with pressure acting as a quadratic element ($p^2$).
+
 | Gas      | RMSE | MAE  |
 |:----------:|:----:|:-----------:|
 | CO<sub>2</sub>  | 8.0685  | 5.6333  |
@@ -80,7 +82,15 @@ From Tables 3 and 4, the following observations can be drawn regarding the model
 
 **Table 6**: Results obtained from R implementation.
 
+From Tables 5 and 6, the following observations can be drawn regarding the model fits in both programming environments:
+* The BFGS optimization method, selected for this case, yields similar results in both programming environments.
+* For Air, the model fit is slightly better in the R environment.
+
 ## Conclusions
 **Note**: The R implementation utilized powerful server nodes to obtain results, while the Python implementation was executed on a local machine equipped with an Intel Core i7 9th generation processor. Surprisingly, the Python implementation is faster, and its time complexity is comparable to that of the server nodes supporting R.
+
+* Although the Python implementation produced results similar to those of R in most cases, it occasionally issued optimization warnings. However, these warnings did not adversely affect the outcomes.
+* The Python implementation operates faster in some cases, even though it runs on a local machine rather than a server.
+* The R and Python implementations are fundamentally similar, using the same training and test data; however, the optimization results vary slightly between the two environments, likely due to differences in how the respective libraries are implemented for handling exceptions and warnings.
 
 
