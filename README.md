@@ -2,7 +2,9 @@
 
 In my master's thesis, I developed an extension of the well-known Dose-Response (DR) curve method, introducing a model capable of incorporating multiple explanatory variables. This new approach, termed the "Extended BC.5 method," was shown to be applicable not only in Toxicology but also across various other fields. The original work was implemented in R due to the comprehensive DR modeling capabilities of its libraries. Recently, I translated this work into Python by developing a [library](https://github.com/gautampk95/drm_basic) that supports common DR models, successfully replicating the thesis results in a more widely adopted programming environment.
 
-This project primarily focuses on the key results obtained from my thesis work in R, comparing them with the implementations in Python as demonstrated throughout this project. The 
+This project primarily focuses on the key results obtained from my thesis work in R, comparing them with the implementations in Python as demonstrated throughout this project. The repository contains a Python code file that demonstrates the implementation of the [Extended BC.5 models](https://github.com/gautampk95/extended_bc5/blob/main/ext_bc5_python_.ipynb) in various scenarios. Additionally, another Python code file is provided for reference, showing the [coefficients estimated](https://github.com/gautampk95/extended_bc5/blob/main/drm_3models_on_all_data_.ipynb) using three different Dose-Response models for varying pressure and particle sizes.
+
+**Note**: The training and test data used cannot be disclosed here, as they are proprietary to the researchers who collected them in real-time. The dataset names mentioned in the code files are provided solely for reference.
 
 ## Proposed Extended BC.5 method
 In the thesis work, the extended BC.5 method comprised 5 functions in its formulation, as shown below:
@@ -13,7 +15,7 @@ After finding the variable "Pressure", denoted as $p$, to include in all the fun
 
 $$  f(x_i, p_i) = c(p_i) + \frac{d(p_i) - c(p_i) + f(p_i)x_i}{1 + \text{exp}(b(p_i)(\log(x_i) - \log(e(p_i))))} $$
 
-Here, $x$ is the time variable.The initial intercept values are crucial for identifying local minima. These values are calculated based on the estimates for the parameters $b, c, d, e$ and $f$, as demonstrated in the Jupyter notebook.
+Here, $x$ is the time variable. The initial intercept values are crucial for identifying local minima. These values are calculated based on the estimates for the parameters $b, c, d, e$ and $f$, as demonstrated in the Jupyter notebook.
 
 ## Optimization: BFGS
 
