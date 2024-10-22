@@ -1,10 +1,39 @@
 # Extended BC5: A Comparison of Results Produced by Python and R Implementations
 
+## Optimization: BFGS
 
 | Gas      | RMSE | MAE  |
 |:----------:|:----:|:-----------:|
-| CO<sub>2</sub>  | 9.9047  | 7. 1199  |
+| CO<sub>2</sub>  | 9.9047  | 7.1199  |
 | Helium  | 43.0169  | 26.5585    |
 | Air (Luft) | 14.2676  | 7.6325      |
 
-**Table 1**: Results obtained from Python implementation. Optimization: BFGS
+**Table 1**: Results obtained from Python implementation.
+
+| Gas      | RMSE | MAE  |
+|:----------:|:----:|:-----------:|
+| CO<sub>2</sub>  | 11.9659  | 8.5416  |
+| Helium  | 43.0170  | 26.5588    |
+| Air (Luft) | 14.2680  | 7.6332      |
+
+**Table 2**: Results obtained from R implementation.
+
+
+## Optimization: Nelder-Mead
+
+| Gas      | RMSE | MAE  |
+|:----------:|:----:|:-----------:|
+| CO<sub>2</sub>  | 13.8964  | 10.5373  |
+| Helium  | 44.3025  | 29.7143    |
+| Air (Luft) | 20.1633  | 12.9566      |
+
+**Table 1**: Results obtained from Python implementation.
+
+| Gas      | RMSE | MAE  |
+|:----------:|:----:|:-----------:|
+| CO<sub>2</sub>  | 12.2258  | 9.2776  |
+| Helium  | 43.8554  | 29.2820    |
+| Air (Luft) | 23.0343  | 15.1110      |
+
+**Table 2**: Results obtained from R implementation.
+
