@@ -35,7 +35,7 @@ The models are constructed separately for the training data associated with diff
 
 **Table 2**: Results obtained from R implementation.
 
-From Tables 1 and 2, the following observations can be drawn regarding the model fits in both programming environments::
+From Tables 1 and 2, the following observations can be drawn regarding the model fits in both programming environments:
 * The Extended BC.5 model developed for CO<sub>2</sub> demonstrates a good fit in the Python implementation.
 * The models for Helium and Air yield similar fits in the Python implementation compared to those in the R implementation.
 
@@ -57,6 +57,10 @@ From Tables 1 and 2, the following observations can be drawn regarding the model
 | Air (Luft) | 23.0343  | 15.1110      |
 
 **Table 4**: Results obtained from R implementation.
+
+From Tables 3 and 4, the following observations can be drawn regarding the model fits in both programming environments:
+* Although the Nelder-Mead optimization method is not ideal for this modeling case, the R implementation achieved slightly better results for the models built using data from CO<sub>2</sub> and Helium.
+* Interestingly, for the model developed using Air data, the Python implementation produces better results.
 
 ## Non-linear functions in the model function. Optimization: BFGS
 
