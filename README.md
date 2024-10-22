@@ -17,6 +17,8 @@ Here, $x$ is the time variable.The initial intercept values are crucial for iden
 
 ## Optimization: BFGS
 
+The models are constructed separately for the training data associated with different gases.
+
 | Gas      | RMSE | MAE  |
 |:----------:|:----:|:-----------:|
 | CO<sub>2</sub>  | 9.9047  | 7.1199  |
@@ -32,6 +34,10 @@ Here, $x$ is the time variable.The initial intercept values are crucial for iden
 | Air (Luft) | 14.2680  | 7.6332      |
 
 **Table 2**: Results obtained from R implementation.
+
+From Tables 1 and 2, the following observations can be drawn regarding the model fits in both programming environments::
+* The Extended BC.5 model developed for CO<sub>2</sub> demonstrates a good fit in the Python implementation.
+* The models for Helium and Air yield similar fits in the Python implementation compared to those in the R implementation.
 
 
 ## Optimization: Nelder-Mead
@@ -69,5 +75,8 @@ Here, $x$ is the time variable.The initial intercept values are crucial for iden
 | Air (Luft) | 13.8897  | 7.2445      |
 
 **Table 6**: Results obtained from R implementation.
+
+
+**Note **: The R implementation utilized powerful server nodes to obtain results, while the Python implementation was executed on a local machine equipped with an Intel Core i7 9th generation processor. Surprisingly, the Python implementation is faster, and its time complexity is comparable to that of the server nodes supporting R.
 
 
