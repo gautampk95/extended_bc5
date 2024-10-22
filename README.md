@@ -4,7 +4,7 @@ In my master's thesis, I developed an extension of the well-known Dose-Response 
 
 This project primarily focuses on the key results obtained from my thesis work in R, comparing them with the implementations in Python as demonstrated throughout this project. The repository contains a Python code file that demonstrates the implementation of the [Extended BC.5 models](https://github.com/gautampk95/extended_bc5/blob/main/ext_bc5_python_.ipynb) in various scenarios. Additionally, another Python code file is provided for reference, showing the [coefficients estimated](https://github.com/gautampk95/extended_bc5/blob/main/drm_3models_on_all_data_.ipynb) using three different Dose-Response models for varying pressure and particle sizes.
 
-**Note**: The training and test data used cannot be disclosed here, as they are proprietary to the researchers who collected them in real-time. The dataset names mentioned in the code files are provided solely for reference.
+**Note**: The training and test data used cannot be disclosed here, as they are proprietary to the researchers who collected them in real-time. The dataset names mentioned in the code files are provided solely for reference. The focus is on defining functions and the overall implementation in Python.
 
 ## Proposed Extended BC.5 method
 In the thesis work, the extended BC.5 method comprised 5 functions in its formulation, as shown below:
