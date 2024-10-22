@@ -3,23 +3,12 @@
 <div style="display: flex;">
 
   <figure style="margin-right: 20px;">
-    <table>
-      <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
-        <th>Column 3</th>
-      </tr>
-      <tr>
-        <td>Row 1 Cell</td>
-        <td>Row 1 Cell</td>
-        <td>Row 1 Cell</td>
-      </tr>
-      <tr>
-        <td>Row 2 Cell</td>
-        <td>Row 2 Cell</td>
-        <td>Row 2 Cell</td>
-      </tr>
-    </table>
+    | Name      | Age | Occupation  |
+|-----------|-----|-------------|
+| John Doe  | 25  | Developer   |
+| Jane Doe  | 30  | Designer    |
+| Mike Ross | 35  | Lawyer      |
+
     <figcaption>Table 1: Description of the first table</figcaption>
   </figure>
 
