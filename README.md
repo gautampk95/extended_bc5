@@ -91,6 +91,8 @@ From Tables 5 and 6, the following observations can be drawn regarding the model
 ## Conclusions
 **Note**: The R implementation utilized powerful server nodes to obtain results, while the Python implementation was executed on a local machine equipped with an Intel Core i7 9th generation processor. Surprisingly, the Python implementation is faster, and its time complexity is comparable to that of the server nodes supporting R.
 
+![Alt text](path/to/BFGS_NelderMead_Comparison.png)
+
 * Although the Python implementation produced results similar to those of R in most cases, it occasionally issued optimization warnings. However, these warnings did not adversely affect the outcomes.
 * The Python implementation operates faster in some cases, even though it runs on a local machine rather than a server.
 * The R and Python implementations are fundamentally similar, using the same training and test data; however, the optimization results vary slightly between the two environments, likely due to differences in how the respective libraries are implemented for handling exceptions and warnings.
