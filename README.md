@@ -1,4 +1,4 @@
-# Extended BC5: A Comparison of Results Produced by Python and R Implementations
+# Extended BC.5: A Comparison of Results Produced by Python and R Implementations
 
 In my master's thesis, I developed an extension of the well-known Dose-Response (DR) curve method, introducing a model capable of incorporating multiple explanatory variables. This new approach, termed the "Extended BC.5 method," was shown to be applicable not only in Toxicology but also across various other fields. The original work was implemented in R due to the comprehensive DR modeling capabilities of its libraries. Recently, I translated this work into Python by developing a [library](https://github.com/gautampk95/drm_basic) that supports common DR models, successfully replicating the thesis results in a more widely adopted programming environment.
 
